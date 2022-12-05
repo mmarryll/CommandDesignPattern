@@ -1,8 +1,4 @@
-/**
- * Fan Start Command where we are encapsulating both Object[fan] and the
- * operation[start] together as command. This is the essence of the command.
- *
- */
+//Включение вентилятора
 public class StartFCommand implements ICommand {
 
     Fan fan;
@@ -13,7 +9,7 @@ public class StartFCommand implements ICommand {
     }
 
     public void execute() {
-        System.out.println("starting Fan.");
+        System.out.println("Starting fan.");
         fan.start();
     }
 }
