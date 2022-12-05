@@ -1,8 +1,4 @@
-/**
- * Fan stop Command where we are encapsulating both Object[fan] and the
- * operation[stop] together as command. This is the essence of the command.
- *
- */
+//Выключение вентилятора
 public class StopFCommand implements ICommand {
 
     Fan fan;
@@ -13,7 +9,7 @@ public class StopFCommand implements ICommand {
     }
 
     public void execute() {
-        System.out.println("stopping Fan.");
+        System.out.println("Stopping fan.");
         fan.stop();
     }
 }
