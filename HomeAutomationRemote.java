@@ -1,7 +1,6 @@
-/**
- * Remote Control for Home automation where it will accept the command and
- * execute. This is the invoker in terms of command pattern terminology
- */
+
+//Remote Control for Home automation where it will accept the command and execute. 
+ 
 public class HomeAutomationRemote {
 
     //Command Holder
