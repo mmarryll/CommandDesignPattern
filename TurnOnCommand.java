@@ -1,8 +1,4 @@
-/**
- * Light stop Command where we are encapsulating both Object[light] and the
- * operation[turnOff] together as command. This is the essence of the command.
- *
- */
+//Включение света
 public class TurnOnCommand implements ICommand {
 
     Light light;
