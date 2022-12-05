@@ -1,8 +1,4 @@
-
-/**
- * Demo class for HomeAutomation
- *
- */
+//Проверка
 public class Client   //client
 {
     public static void main(String[] args)
