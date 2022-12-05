@@ -15,7 +15,7 @@ public class Client   //client
 
         Fan bedRoomFan = new Fan();
 
-        HomeAutomationRemote remote = new HomeAutomationRemote(); 
+        HomeAutomationRemote remote = new HomeAutomationRemote();
 
         remote.setCommand(new TurnOnCommand( livingRoomLight ));
         remote.buttonPressed();
