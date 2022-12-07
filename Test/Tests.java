@@ -22,7 +22,7 @@ class Tests {
         HomeAutomationRemote remote = new HomeAutomationRemote();
         remote.setCommand(new TurnOnCommand( livingRoomLight ));
         remote.buttonPressed();
-        Assertions.assertEquals("Turning on light.\nLight is on.\n", output.toString());
+        Assertions.assertEquals("Turning on light." + System.lineSeparator() + "Light is on." + System.lineSeparator(), output.toString());
     }
 
     @Test
@@ -31,7 +31,7 @@ class Tests {
         HomeAutomationRemote remote = new HomeAutomationRemote();
         remote.setCommand(new TurnOffCommand( livingRoomLight ));
         remote.buttonPressed();
-        Assertions.assertEquals("Turning off light.\nLight is off.\n", output.toString());
+        Assertions.assertEquals("Turning off light." + System.lineSeparator() + "Light is off." + System.lineSeparator(), output.toString());
     }
 
     @Test
@@ -40,7 +40,7 @@ class Tests {
         HomeAutomationRemote remote = new HomeAutomationRemote();
         remote.setCommand(new StartFCommand( livingRoomFan ));
         remote.buttonPressed();
-        Assertions.assertEquals("Starting fan.\nFan started.\n", output.toString());
+        Assertions.assertEquals("Starting fan." + System.lineSeparator() + "Fan started." + System.lineSeparator(), output.toString());
     }
 
     @Test
@@ -49,7 +49,7 @@ class Tests {
         HomeAutomationRemote remote = new HomeAutomationRemote();
         remote.setCommand(new StopFCommand( livingRoomFan ));
         remote.buttonPressed();
-        Assertions.assertEquals("Stopping fan.\nFan stopped.\n", output.toString());
+        Assertions.assertEquals("Stopping fan." + System.lineSeparator() + "Fan stopped." + System.lineSeparator(), output.toString());
     }
 
     @AfterEach
